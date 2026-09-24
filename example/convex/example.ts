@@ -1,15 +1,16 @@
 import { action, mutation, query } from "./_generated/server.js";
 import { components } from "./_generated/api.js";
 import { v } from "convex/values";
-import { PaystackClient } from "@pablodalpha/paystack";
+import { Paystack } from "@convex/paystack";
 
-const paystack = new PaystackClient(components.paystack); 
+const paystack = new Paystack(components.paystack);
 
 export const pay = action({
   args: {
     amount: v.number(),
     email: v.string(),
     reference: v.optional(v.string()),
+    metadata: v.optional(v.record(v.string(), v.any())),
   },
   handler: async (ctx, args) => {
     return await paystack.createTransaction(ctx, args);

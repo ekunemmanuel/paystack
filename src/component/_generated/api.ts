@@ -10,6 +10,7 @@
 
 import type * as lib from "../lib.js";
 import type * as paystack from "../paystack.js";
+import type * as public_ from "../public.js";
 
 import type {
   ApiFromModules,
@@ -21,6 +22,7 @@ import { anyApi, componentsGeneric } from "convex/server";
 const fullApi: ApiFromModules<{
   lib: typeof lib;
   paystack: typeof paystack;
+  public: typeof public_;
 }> = anyApi as any;
 
 /**

@@ -49,5 +49,5 @@ export declare const internal: FilterApi<
 >;
 
 export declare const components: {
-  paystack: import("@emmanuelapabiekun/paystack/_generated/component.js").ComponentApi<"paystack">;
+  paystack: import("@convex/paystack/_generated/component.js").ComponentApi<"paystack">;
 };

@@ -17,7 +17,10 @@ function PaymentDemo() {
             const result = await pay({
                 amount,
                 email,
-                reference: "" + Math.floor(Math.random() * 1000000000 + Date.now()),
+                // reference: "" + Math.floor(Math.random() * 1000000000 + Date.now()),
+                metadata: {
+                    orderId: "123",
+                },
             });
             console.log("Pay result:", result);
             setLastRef(result.reference);

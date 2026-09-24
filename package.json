@@ -1,5 +1,5 @@
 {
-  "name": "@pablodalpha/paystack",
+  "name": "@convex/paystack",
   "description": "A paystack component for Convex.",
   "repository": "github:ekunemmanuel/paystack",
   "homepage": "https://github.com/ekunemmanuel/paystack#readme",

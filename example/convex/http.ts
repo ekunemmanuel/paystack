@@ -1,5 +1,5 @@
 import { httpRouter } from "convex/server";
-import { registerRoutes } from "@pablodalpha/paystack";
+import { registerRoutes } from "@convex/paystack";
 import { api, components } from "./_generated/api";
 
 const http = httpRouter();
